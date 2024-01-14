@@ -14,7 +14,8 @@ variable "region" {
 
 variable "shape" {
   type    = string
-  default = "VM.Standard.A1.Flex"
+# default = "VM.Standard.A1.Flex"
+  default = "VM.Standard.E3.Flex"
 }
 
 variable "ocpus_per_node" {
@@ -29,7 +30,8 @@ variable "memory_in_gbs_per_node" {
 
 variable "image_id" {
   type    = string
-  default = "ocid1.image.oc1.iad.aaaaaaaao2zpwcb2osmbtliiuzlphc3y2fqaqmcpp5ttlcf573sidkabml7a"
+  #default = "ocid1.image.oc1.iad.aaaaaaaao2zpwcb2osmbtliiuzlphc3y2fqaqmcpp5ttlcf573sidkabml7a"
+  default = "ocid1.image.oc1.iad.aaaaaaaanwsto6tqklfuawgqrve5ugjpbff3l5qtb7bs35dp72ewcnsuwoka"
 }
 # Link to a list of available images (Be sure to select the correct region and CPU architecture. We are using Oracle-Linux-8.8-aarch64-2023.09.26-0-OKE-1.28.2-653)
 # https://docs.cloud.oracle.com/iaas/images/
