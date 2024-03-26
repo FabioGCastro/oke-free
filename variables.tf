@@ -44,7 +44,7 @@ variable "k8s_version" {
 
 variable "node_size" {
   type    = string
-  default = "1"
+  default = "3"
 }
 
 variable "cluster_name" {
